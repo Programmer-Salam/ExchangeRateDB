@@ -24,10 +24,10 @@ This project implements a service to provide data about currency exchange rates,
 ## Technology Stack
 
 - **Version Control**: Git
-- **Server**: Apache 
+- **Server**: Apache / Nginx
 - **Database**: MySQL
 - **PHP Version**: 7.x
-- **Framework**: Laravel Framework
+- **Framework**: (specify your chosen framework, if any, or state "Clean implementation without a framework")
 
 ## Setup Instructions
 
@@ -54,7 +54,11 @@ The third endpoint offers access to the historical exchange rate changes for a s
 
 ### Authentication
 
-All API endpoints are secured with Bearer Token authentication. To access the secured endpoints, users need to obtain a token. A dedicated endpoint allows users to generate a token, which they can then use to authenticate their requests to the other endpoints.
+All API endpoints are secured with Bearer Token authentication. To access the secured endpoints, users need to obtain a token. 
+
+#### To Get Token
+
+Go directly to the project directory and run the route for `getToken`. This will generate a token, which can then be used as a Bearer token for authentication when making requests. If you want to use Bearer authentication, ensure you have the token ready instead of attempting to get a direct response.
 
 ### Note on Access
 
