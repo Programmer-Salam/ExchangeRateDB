@@ -35,8 +35,8 @@ This project implements a service to provide data about currency exchange rates,
 2. Install dependencies.
 3. Configure your database by creating a MySQL database and updating the `.env` file.
 4. Run the migrations to create the necessary tables.
-5. Set up a cron job for the console command to run every minute, updating exchange rates.
-6. Start the server and access the application.
+5. Start the server and access the application.
+6. **Run the scheduled task**: Execute the command `php artisan schedule:work` to start updating the exchange rates every minute. (The cron job is already set up, so you don’t need to configure anything further.)
 
 ## API Endpoints
 
